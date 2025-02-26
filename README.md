@@ -1,3 +1,7 @@
+## Deploy
+
+[Website](https://mindbox-n1tw.onrender.com)
+
 ## Description
 
 [Task description](https://docs.google.com/document/d/1X9zMnAAU9vvEzdYtSEeeram8Kur5o-py5ChKlK5TIa8/edit?tab=t.0)
@@ -10,7 +14,7 @@ code .
 
 After opening in IDE
 
-## Screenshots
+<!-- ## Screenshots -->
 
 <!-- ![Screenshot_1](https://github.com/user-attachments/assets/94a0c963-6b84-4f77-8830-6023e56b7cc8) -->
 
