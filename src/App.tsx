@@ -6,7 +6,7 @@ interface ErrorType {
   message: string;
 }
 
-type Todo = {
+export type Todo = {
   id: number;
   text: string;
   completed: boolean;
@@ -23,7 +23,7 @@ const App: React.FC = () => {
   const [errors, setErrors] = useState<ErrorType | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
 
-  let schema = yup.object().shape({
+  const schema = yup.object().shape({
     todoText: yup
       .string()
       .trim()
@@ -144,7 +144,7 @@ const App: React.FC = () => {
 
       {todos && (
         <>
-          <ul>
+          <ul className="list">
             {filteredTodos.length > 0 ? (
               filteredTodos.map(({ id, text, completed }) => (
                 <li key={id} className={completed ? 'completed' : ''}>
