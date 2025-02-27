@@ -174,21 +174,10 @@ ul > li.completed {
 }
 
 @media (min-width: 344px) {
-  .controller {
-    max-width: 400px;
-  }
-
-  form input {
-    max-width: 400px;
-  }
-  .feedback {
-    max-width: 400px;
-  }
-
-  .todo {
-    max-width: 400px;
-  }
-
+  .controller,
+  form input,
+  .feedback,
+  .todo,
   .features-block {
     max-width: 400px;
   }

@@ -6,12 +6,17 @@ interface ErrorType {
   message: string;
 }
 
+type Todo = {
+  id: number;
+  text: string;
+  completed: boolean;
+};
+
 const App: React.FC = () => {
-  const [todos, setTodos] = useState([
-    { id: 1, text: 'Тестовое задание', completed: false },
-    { id: 2, text: 'Прекрасный код', completed: true },
-    { id: 3, text: 'Покрытие тестами', completed: false },
-  ]);
+  const [todos, setTodos] = useState<Todo[]>(() => {
+    const storedTodosString = localStorage.getItem('todos');
+    return storedTodosString ? JSON.parse(storedTodosString) : [];
+  });
   const [todoInput, setTodoInput] = useState('');
   const [activeButton, setActiveButton] = useState('all'); // 'active', 'completed'
 
@@ -81,6 +86,10 @@ const App: React.FC = () => {
     }
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
+
   const filteredTodos = todos.filter((t) => {
     if (activeButton === 'active') {
       return !t.completed;
@@ -103,20 +112,20 @@ const App: React.FC = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {' '}
                   <path
                     d="M7 10L12 15L17 10"
                     stroke="#e4e6e7"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>{' '}
                 </g>
               </svg>
