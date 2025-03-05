@@ -17,13 +17,20 @@ The application is implemented using Typescript, React, Vite, yup
 5) Added caching via localStorage
 6) Adaptation for mobile devices has been implemented
 
+## Development command
+
 ```sh
-git clone https://github.com/zebpaa/mindbox.git
-cd mindbox/
+git clone https://github.com/zebpaa/TodosList.git
+cd TodosList/
 code .
+npm i && npm run start
 ```
 
-After opening in IDE
+## Build command
+
+```sh
+npm run build
+```
 
 ## Screenshots
 
@@ -33,15 +40,3 @@ After opening in IDE
 ![todos_4](https://github.com/user-attachments/assets/6b52d578-8cb2-489b-bf8d-47f360ca8508)
 ![todos_5](https://github.com/user-attachments/assets/a8aede25-2ff1-4765-9a34-0a94c78665f9)
 ![todos_6](https://github.com/user-attachments/assets/7ddbfa3e-b6f7-460d-9dc0-ae701b357a56)
-
-## Development command
-
-```sh
-npm i && npm run start
-```
-
-## Build command
-
-```sh
-npm run build
-```
