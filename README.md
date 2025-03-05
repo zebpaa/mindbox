@@ -4,6 +4,8 @@
 
 ## Description
 
+Web-application that lets you manage your current to-do list
+
 [Task description](https://docs.google.com/document/d/1X9zMnAAU9vvEzdYtSEeeram8Kur5o-py5ChKlK5TIa8/edit?tab=t.0)
 
 The application is implemented using Typescript, React, Vite, yup
@@ -13,6 +15,7 @@ The application is implemented using Typescript, React, Vite, yup
 3) Implemented deletion of all completed tasks via one button
 4) Covered the application with tests
 5) Added caching via localStorage
+6) Adaptation for mobile devices has been implemented
 
 ```sh
 git clone https://github.com/zebpaa/mindbox.git
