@@ -14,9 +14,14 @@ code .
 
 After opening in IDE
 
-<!-- ## Screenshots -->
+## Screenshots
 
-<!-- ![Screenshot_1](https://github.com/user-attachments/assets/94a0c963-6b84-4f77-8830-6023e56b7cc8) -->
+![todos_1](https://github.com/user-attachments/assets/1349d2eb-a66d-44ab-a360-09b40c3cfbed)
+![todos_2](https://github.com/user-attachments/assets/ca3903b9-c5a0-40b3-b17c-b989cb775d3d)
+![todos_3](https://github.com/user-attachments/assets/10994c8e-0823-4990-b665-e0ade68ceebb)
+![todos_4](https://github.com/user-attachments/assets/6b52d578-8cb2-489b-bf8d-47f360ca8508)
+![todos_5](https://github.com/user-attachments/assets/a8aede25-2ff1-4765-9a34-0a94c78665f9)
+![todos_6](https://github.com/user-attachments/assets/7ddbfa3e-b6f7-460d-9dc0-ae701b357a56)
 
 ## Development command
 
